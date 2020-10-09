@@ -1,0 +1,8 @@
+version: '3'
+services:
+    mydb:
+        image: "postgres"
+        env_file:
+            - database.env
+        volumes:
+            - database-data: /mnt/d/linux/postgresql/data/
